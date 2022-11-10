@@ -45,7 +45,7 @@
 
 <div class="container-fluid fixed-bottom">
  <div class="card text-center border-0 mb-2">
-    Copyright 2022 Rizki Aulia - Teknik Informatika
+    Copyright 2022 FADHIL AKRAM - Teknik Informatika
  </div>
 </div>
 </body>
