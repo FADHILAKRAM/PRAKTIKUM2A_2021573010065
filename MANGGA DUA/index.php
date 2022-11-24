@@ -1,5 +1,6 @@
 
   <?php
+    session_start();
     if(isset($_GET['x']) && $_GET['x']=='home') {
       $page = "home.php";
       include "main.php";}
@@ -7,8 +8,13 @@
       $page = "order.php";
       include "main.php";}
     elseif(isset($_GET['x']) && $_GET['x']=='user') {
-      $page = "user.php";
-      include "main.php";}
+      if($_SESSION['level_manggadua']==1){
+        $page = "user.php";
+        include "main.php";
+      }else{
+        $page = "home.php";
+        include "main.php";} 
+      }
     elseif(isset($_GET['x']) && $_GET['x']=='costumer') {
       $page = "costumer.php";
       include "main.php";}
