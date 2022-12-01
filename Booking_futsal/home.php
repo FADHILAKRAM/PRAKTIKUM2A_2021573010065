@@ -80,7 +80,6 @@
     <div class="card-body">
       <h5 class="card-title">GALAXY FUTSAL</h5>
       <p class="card-text">BOKING FUTSAL DIMARI KALO GA BOKING JANGAN KEMARI</p>
-      <p class="card-text">INI BOKING FUTSAL BUKAN BOKING CEWEK</p>
       <a href="#" class="btn btn-success">Booking</a>
     </div>
   </div>

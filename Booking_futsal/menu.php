@@ -14,7 +14,7 @@
     </tr>
     
   </table>
-<table class="table table-bordered bordered-success text-center">
+<table class="table table-bordered bordered-success text-center text-light">
   <thead>
     <tr>
       <th scope="col">no</th>
