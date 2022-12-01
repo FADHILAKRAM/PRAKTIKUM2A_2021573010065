@@ -1,3 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="img.css">
+  <style>
+body {
+    background-image: url('img/rumput.jpg');
+}
+        </style>
+</head>
+<body>
+</body>
+</html>
+
+
 <nav  class="navbar navbar-expand-lg bg-light rounded border mt-1">
   <div class="container-fluid">
     <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
