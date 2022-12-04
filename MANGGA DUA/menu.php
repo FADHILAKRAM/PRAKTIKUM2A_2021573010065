@@ -29,7 +29,7 @@ $select_kat_menu = mysqli_query($conn, "SELECT kategori_menu FROM tb_kategori_me
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
-                            <form class="needs-validation" novalidate action="proses/proses_input_user.php" method="POST">
+                            <form class="needs-validation" novalidate action="proses/proses_input_menu.php" method="POST" enctype="multipart/form-data">
                                 <div class="row">
                                     <div class="col-lg-6">
                                         <div class="input-group mb-3">
@@ -80,26 +80,24 @@ $select_kat_menu = mysqli_query($conn, "SELECT kategori_menu FROM tb_kategori_me
                                         <div class="form-floating mb-3">
                                             <input type="number" class="form-control" id="floatingInput" placeholder="HARGA" name="HARGA" required>
                                             <label for="floatingInput">HARGA</label>
+                                            <div class="invalid-feedback">
+                                                MASUKKAN HARGA MENU
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="col-lg-4">
                                         <div class="form-floating mb-3">
                                             <input type="number" class="form-control" id="floatingInput" placeholder="STOK" name="STOK" required>
                                             <label for="floatingInput">STOK</label>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-lg-12">
-                                        <div class="form-floating mb-3">
-                                            <input type="password" class="form-control" id="floatingInput" placeholder="Password" disabled value="12345" name="password">
-                                            <label for=" floatingPassword">Password</label>
+                                            <div class="invalid-feedback">
+                                                MASUKKAN STOK
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                    <button type="submit" class="btn btn-primary" name="input_user_validate" value="12345">Save changes</button>
+                                    <button type="submit" class="btn btn-primary" name="input_menu_validate" value="12345">Save changes</button>
                                 </div>
                             </form>
                         </div>

@@ -1,6 +1,6 @@
 <?php
-    $conn = mysqli_connect("127.0.0.1:3307","root","","db_manggadua");
-    if (!$conn) {
+    $conn = mysqli_connect("127.0.0.1:3307","root","","futsal");
+    if(!$conn){
         echo "gagal koneksi";
     }
 ?>
