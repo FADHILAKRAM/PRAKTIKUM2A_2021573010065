@@ -1,8 +1,9 @@
 <?php
 include "connect.php";
+$id = (isset($_POST['id'])) ? htmlentities($_POST['id']) : "";
 $nama_menu = (isset($_POST['nama_menu'])) ? htmlentities($_POST['nama_menu']) : "";
 $keterangan = (isset($_POST['keterangan'])) ? htmlentities($_POST['keterangan']) : "";
-$kat_menu = (isset($_POST['kat_menu'])) ? htmlentities($_POST['kat_menu ']) : "";
+$kategori = (isset($_POST['kategori'])) ? htmlentities($_POST['kategori']) : "";
 $harga = (isset($_POST['harga'])) ? htmlentities($_POST['harga']) : "";
 $stok = (isset($_POST['stok'])) ? htmlentities($_POST['stok']) : "";
 
@@ -27,7 +28,7 @@ if (!empty($_POST['input_menu_validate'])) {
                 $message = "file foto yang di upload terlalu besar";
                 $statusUpload = 0;
             } else {
-                if ($imageType != "jpg" && $imageType != "png" && $imageType != "jpeg" && $imageType != "gif") {
+                if ($imageType != "jpg" && $imageType != "png" && $imageType != "jpeg" && $imageType != "giv") {
                     $message = "maaf, hanya diperbolehkan gambar yang memiliki format JPG, PNG, JPEG dan GIF";
                     $statusUpload = 0;
                 }
@@ -46,7 +47,7 @@ if (!empty($_POST['input_menu_validate'])) {
         </script>';
         } else {
             if (move_uploaded_file($_FILES['foto']['tmp_name'], $target_file)) {
-                $query = mysqli_query($conn, "INSERT INTO tb_daftar_menu (foto,nama_menu,keterangan,kategori,harga,stok) values('" . $kode_rand . $_FILES['foto']['name'] . "','$nama_menu','$kategori','$kat_menu','$harga','$stok')");
+                $query = mysqli_query($conn, "UPDATE tb_daftar_menu SET foto='" . $kode_rand . $_FILES['foto']['name'] . "' WHARE id='$id'");
                 if ($query) {
                     $message = '<script>alert("Data berhasil dimasukkan");
                     window.location="../menu"</script>

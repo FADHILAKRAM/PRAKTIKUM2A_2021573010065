@@ -14,7 +14,7 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.104.2">
-    <title>BOKING FUTSAL</title>
+    <title>Decafe Aplikasi Pemesanan</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/sign-in/">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
