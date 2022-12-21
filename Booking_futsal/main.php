@@ -36,8 +36,8 @@
             <!-- End Content -->
         </div>
 
-        <div class="fixed-bottom text-center bg-light py-2">
-        Copyright 2022 Fadhil Akram
+        <div class="fixed-bottom text-center bg-success py-2">
+        Copyright 2022 Muge Website
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"

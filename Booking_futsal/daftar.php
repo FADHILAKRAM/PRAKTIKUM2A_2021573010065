@@ -11,40 +11,40 @@
     <title>Document</title>
 </head>
 <body>
-    <h1 class="text-center">DAFTAR</h1>
+    <center><h1 class="text-center link-light" >DAFTAR SEKARANG</h1> </center>
     <div class="container">
         <form class="row g-3" action="Proses/proses_daftar.php" method="POST">
             <div class="col-md-6">
-                <label for="inputEmail4" class="form-label">Nama</label>
+                <label for="inputEmail4" class="form-label text-center link-light">Nama</label>
                 <input type="text" class="form-control" id="inputEmail4" name="nama">
             </div>
             
             <div class="col-md-6">
-                <label for="inputEmail4" class="form-label">Email</label>
+                <label for="inputEmail4" class="form-label text-center link-light">Email</label>
                 <input type="email" class="form-control" id="inputEmail4" name="email">
             </div>
             
             <div class="col-md-6">
-                <label for="inputPassword4" class="form-label">Password</label>
+                <label for="inputPassword4" class="form-label text-center link-light">Password</label>
                 <input type="password" class="form-control" id="inputPassword4" name="password">
             </div>
             <div class="col-md-6">
-                <label for="inputPassword4" class="form-label">Confirmasi Password</label>
+                <label for="inputPassword4" class="form-label text-center link-light">Confirmasi Password</label>
                 <input type="password" class="form-control" id="inputPassword4" name="passwordcon">
             </div>
             <div class="col-md-6">
-                <label for="input" class="form-label">Nomor Telepon</label>
+                <label for="input" class="form-label text-center link-light">Nomor Telepon</label>
                 <input type="text" class="form-control" id="" name="nohp">
             </div>
             <div class="col-12">
-                <label for="inputAddress" class="form-label">Alamat</label>
+                <label for="inputAddress" class="form-label text-center link-light">Alamat</label>
                 <input type="text" class="form-control" id="inputAddress" placeholder="jln,kec,kab,prov" name="alamat">
             </div>
             
             <div class="col-12">
                 <div class="form-check">
                     <input class="form-check-input" type="checkbox" id="gridCheck">
-                    <label class="form-check-label" for="gridCheck">
+                    <label class="form-check-label text-center link-light" for="gridCheck">
                         Menyetujui Persyaratan
                     </label>
                 </div>
@@ -55,4 +55,16 @@
         </form>
     </div>
 </body>
+</html>
+<html>
+    <head>
+        <link rel="stylesheet" href="img.css">
+        <style>
+            body{
+                background-image: url('assets/img/9.JPG');
+                
+
+            };
+        </style>
+    </head>
 </html>

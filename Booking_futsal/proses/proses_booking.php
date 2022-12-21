@@ -16,7 +16,7 @@ if (!empty($_POST['booking_validate'])) {
         window.location="../order"</script>
         </script>';
     } else {
-        $query = mysqli_query($conn, "INSERT INTO booking (email,tanggal,jam,durasi) values('$email','$tanggal','$jam','$durasi')");
+        $query = mysqli_query($conn, "INSERT INTO booking (email,tanggal,jam) values('$email','$tanggal','$jam')");
         if ($query) {
             $message = '<script>alert("pembookingan berhasil");
         window.location="../order"</script>';

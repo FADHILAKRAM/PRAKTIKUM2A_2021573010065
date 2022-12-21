@@ -1,13 +1,51 @@
 <div class="col-lg-9 mt-2">
+
                 <div class="card">
                     <div class="card-header">
-                        NYOE REPORT
+                        laporan mingguan
                     </div>
                     <div class="card-body">
-                        <h5 class="card-title">Ini Adalah Bagian Report</h5>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content 
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed dicta magni et impedit. Atque nisi quod minima, amet cumque nesciunt ut dolore similique maiores provident optio ad ullam eligendi nemo.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <?php
+include 'proses/connect.php';
+$nows=strtotime(date('Y-m-d'));
+$start=date('Y-m-d',strtotime('-7 day',$nows));
+$end=date('Y-m-d');
+echo 'daftar transaksi 7 hari terakhir periode '.$start. ' hingga '.$end;
+$dtr = "SELECT * FROM booking WHERE tanggal between '$start' AND '$end' ORDER BY id_book DESC";
+$result = mysqli_query($conn,$dtr);
+ 
+?>
+<table class="table table-bordered bordered-success text-center text-dark">
+    <tr><th>id</th><th>email</th><th>tanggal</th><th>jam</th></tr>
+<?php while($row = mysqli_fetch_assoc($result)){ ?>
+    <tr><td><?php echo $row['id_book']; ?></td><td><?php echo $row['email']; ?></td><td><?php echo $row['tanggal']; ?></td><td><?php echo $row['jam']; ?></td></tr>
+<?php } ?>
+ </table>
+                </div>
+            </div>
+
+            <div class="col-lg-9 mt-2">
+                <div class="card">
+                    <div class="card-header">
+                        laporan bulanan
+                    </div>
+                    <div class="card-body">
+                    <?php
+include 'proses/connect.php';
+$nows=strtotime(date('Y-m-d'));
+$start=date('Y-m-d',strtotime('-30 day',$nows));
+$end=date('Y-m-d');
+echo 'daftar transaksi 7 hari terakhir periode '.$start. ' hingga '.$end;
+$dtr = "SELECT * FROM booking WHERE tanggal between '$start' AND '$end' ORDER BY id_book DESC";
+$result = mysqli_query($conn,$dtr);
+ 
+?>
+<table class="table table-bordered bordered-success text-center text-dark">
+    <tr><th>id</th><th>email</th><th>tanggal</th><th>jam</th></tr>
+<?php while($row = mysqli_fetch_assoc($result)){ ?>
+    <tr><td><?php echo $row['id_book']; ?></td><td><?php echo $row['email']; ?></td><td><?php echo $row['tanggal']; ?></td><td><?php echo $row['jam']; ?></td></tr>
+<?php } ?>
+ </table>
                     </div>
                 </div>
             </div>

@@ -14,7 +14,7 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.104.2">
-    <title>Decafe Aplikasi Pemesanan</title>
+    <title>LOGIN FUTSAL SEKARANG</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/sign-in/">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -83,9 +83,7 @@
 
     <main class="form-signin w-100 m-auto">
         <form class="needs-validation" novalidate action="proses/proses_login.php" method="POST">
-        <img src="assets/img/FL.png" style="width:100px;height:120px;">
-            <h1 class="h3 mb-3 fw-normal">Please Login</h1>
-
+            <center><h1 class="h3 mb-3 fw-normal text-center link-light">Please Login</h1></center>
             <div class="form-floating">
                 <input name="email" type="email" class="form-control" id="floatingInput" placeholder="name@example.com" required>
                 <label for="floatingInput">Email address</label>
@@ -101,14 +99,14 @@
                 </div>
             </div>
 
-            <div class="checkbox mb-3">
+            <div class="checkbox text-center link-light mb-3">
                 <label>
-                    <input type="checkbox" value="remember-me"> Remember me
+                    <input type="checkbox" value="remember-me"> Remember Me
                 </label>
             </div>
             <button class="w-100 btn btn-lg btn-success" type="submit" name="submit_validate" value="abc" >Login</button>
-            belum punya akun?<a href="daftar.php" >daftar di sini</a>
-            <p class="mt-5 mb-3 text-muted">&copy; 2021–2022</p>
+            <label for="inputPassword4" class="form-label text-center link-light">Belum Punya Akun?  </label><a href="daftar.php">Daftar Di Sini</a>
+            <p class="mt-5 mb-3 text-center link-light ">&copy; 2021–2022</p>
         </form>
     </main>
 
@@ -136,4 +134,18 @@
 
 </body>
 
+</html>
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="img.css">
+        <style>
+            body{
+                background-image: url('assets/img/9.JPG');
+                
+
+            };
+        </style>
+    </head>
 </html>
